@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  league:
+    image: {account}/global-league-system
+    ports:
+      - 8002:8002
+    networks:
+      - net
+    hostname: global-league-system
+    container_name: global-league-system
+
+networks:
+  net:
+    driver: bridge
